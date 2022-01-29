@@ -34,3 +34,14 @@
     - Откроет редактор, в котором можно поменять название commit
     - Если прошлый commit уже залит в репозиторий, то придется сделать git pull и пофиксить merge conflicts
 - Можно и так: `git commit -a --amend -m "add commit commands"`
+
+
+## Ветвление
+
+- Создать ветку: `git branch branchName`
+- Переключиться на ветку: `git checkout branchName`
+- Создать и переключиться: `git checkout -b branchName`
+- Можно использовать `git switch`
+    - Создать и переключиться: `git switch -c branchName`
+    - Переключиться: `git switch branchName`
+    - Вернуться к предыдушей извлечённой ветки: `git switch -`
