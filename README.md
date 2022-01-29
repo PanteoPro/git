@@ -22,3 +22,15 @@
 
 - Ветка по умолчанию
 `git config --global init.defaultBranch main`
+
+## Commit
+Перед создание коммитов, нужно проиндексировать хотя бы один файл `git add filename`
+### Создание
+- Обычный: `git commit -m "initial commit"`
+- Быстрая версия, проиндексировать все и сделать commit: `git commit -a -m "fast commit"`
+
+### Изменение
+- Если что-то забыли добавить в прошлый коммит: `git commit --amend`
+    - Откроет редактор, в котором можно поменять название commit
+    - Если прошлый commit уже залит в репозиторий, то придется сделать git pull и пофиксить merge conflicts
+- Можно и так: `git commit -a --amend -m "add commit commands"`
