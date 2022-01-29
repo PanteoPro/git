@@ -23,6 +23,15 @@
 - Ветка по умолчанию
 `git config --global init.defaultBranch main`
 
+## Remote
+Управление репозиториями
+
+- Вывести репозитории: `git remote` / `git remote -v`
+- Добавить репозиторий: `git remote add nameRepo url`
+- Вывести подробную информацию: `git remote show nameRepo`
+- Переименовать репозиторий: `git remote rename nameRepo newNameRepo`
+- Удалить репозиторий: `git remote rm nameRepo`
+
 ## Commit
 Перед создание коммитов, нужно проиндексировать хотя бы один файл `git add filename`
 ### Создание
