@@ -33,7 +33,7 @@
 - Удалить репозиторий: `git remote rm nameRepo`
 
 ## Log
-Вывод информации об commits.
+Вывод информации о commits.
 - Показать коммиты: `git log`
     - Все коммиты: `git log --all`
     - Удобный вывод: `git log --oneline --graph --all`
@@ -68,6 +68,15 @@
     - Если прошлый commit уже залит в репозиторий, то придется сделать git pull и пофиксить merge conflicts
 - Можно и так: `git commit -a --amend -m "add commit commands"`
 
+## Pull, Push, Fetch
+fetch - получения данных из удалённых проектов (origin)
+- `git fetch origin`
+
+push - отправка данных в репозиторий
+- `git push origin main`
+
+pull - получение данных и сливание
+- `git pull origin main`
 
 ## Ветвление
 
