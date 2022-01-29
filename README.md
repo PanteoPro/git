@@ -23,6 +23,10 @@
 - Ветка по умолчанию
 `git config --global init.defaultBranch main`
 
+- Создание alias:
+    - `git config --global alias.last 'log -1 HEAD'`
+    - `git last`
+
 ## Remote
 Управление репозиториями
 
@@ -58,6 +62,7 @@
 
 ## Commit
 Перед создание коммитов, нужно проиндексировать хотя бы один файл `git add filename`
+
 #### Создание
 - Обычный: `git commit -m "initial commit"`
 - Быстрая версия, проиндексировать все и сделать commit: `git commit -a -m "fast commit"`
@@ -77,6 +82,14 @@ push - отправка данных в репозиторий
 
 pull - получение данных и сливание
 - `git pull origin main`
+
+## Reset, Restore
+- Отменить индексирование (git add):
+    - `git reset HEAD fileName`
+    - `git restore --staged fileName`
+- Востановить файл(ы) из прошлого commit:
+    - `git checkout someFile.txt`
+    - `git restore someFile.txt`
 
 ## Ветвление
 
